@@ -64,6 +64,9 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The numerical results back up what we saw in the graphs. About 1.4% of women died from the disease, while 3% of men did which is double the women’s rate. This shows that men have a higher chance of dying than women.
+
+
 ## Inferential results 
 
 ```{r}
