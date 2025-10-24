@@ -79,3 +79,5 @@ When looking at the results, I saw that men in South Korea are 2.3 times more li
 
 ## Conclusions
 
+In this assignment, I analyzed COVID data from South Korea. The data was categorical, so I used my helper file to complete the assignment. I analyzed the data using graphs, numbers, and inferential results. In the graphs, I made a chart with ggplot and saw that the number of people alive is much higher than the number of people dead. In the percentage chart, about 64% of the dead were men and 36% were women, showing the disease killed men more than women, while in the alive chart, about 56% were women and 44% were men. The numerical results supported the graphs, with 1.4% of women dying and 3% of men dying, which is double. In the inferential results, the odds of men dying from COVID were 2.3 times higher than women, matching the earlier results. The P-value was low (0.0009), showing that the chances of men and women dying from COVID are not the same, with men at higher risk. Overall, all results show that men have a higher chance of dying from this disease than women.
+
