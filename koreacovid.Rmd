@@ -66,8 +66,13 @@ colPerc(table1)
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+When looking at the results, I saw that men in South Korea are 2.3 times more likely to die from COVID than women. This matches what we’ve seen before, where most of the COVID deaths were men. I also noticed the P-value is very low (0.0009), which means the chances of men and women dying from COVID are not the same because men have a much higher risk than women.
 
 ## Conclusions
 
