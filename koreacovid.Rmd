@@ -34,9 +34,22 @@ state of a patient must be died or alive - we adjust that as well
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
-  
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+When I made the graphs, I saw that a lot more people were alive than dead. The percentage chart showed that of the people who died, about two-thirds were men and one-third were women, meaning the disease killed more men. Among those who lived, most were women (about 57%) and fewer were men (about 43%).  
 
 
 
