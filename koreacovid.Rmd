@@ -58,6 +58,11 @@ When I made the graphs, I saw that a lot more people were alive than dead. The p
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
 ## Inferential results 
 
